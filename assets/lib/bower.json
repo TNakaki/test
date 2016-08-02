@@ -1,0 +1,16 @@
+{
+  "name": "CAPH-DFW",
+  "version": "1.0.0",
+  "description": "DFW - CAPH 3.1 Dependencies for Samsung SMART TV Web App Framework",
+  "license": "Copyright (c) 2014 Samsung Electronics Co., Ltd All Rights Reserved ",
+  "authors": [
+    "Vuhai 'Michael' Nguyen <vn3454@att.com>"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "angular": "^1.5.4",
+    "lodash": "^3.6.0",
+    "velocity": "^1.2.2",
+    "hammerjs": "^2.0.6"
+  }
+}

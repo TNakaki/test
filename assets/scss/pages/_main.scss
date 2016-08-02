@@ -1,0 +1,143 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #777777;
+}
+
+.mainContainer {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+/*video start  */
+
+.mainVideoContainer {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	background: url("../img/VideoPlayerBckgrnd.jpg");
+	background-size: 100% 100%;
+	background-color: #333333;
+	background-attachment: fixed;
+}
+
+/* video end */
+
+
+/* main nav start */
+
+.mainNavContainer {
+	width: 100%;
+	height: 50%;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+}
+
+.mainNavTextContainer{
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.menuItem {
+	font-size: 2.5em;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 1px 1px 1px #333;
+}
+
+#mainMyTvText {
+	box-sizing: border-box;
+	line-height: 1.5em;
+	border: none;
+}
+
+#mainLibraryText {
+	box-sizing: border-box;
+	line-height: 1.5em;
+	margin: 0 3%;
+	border: none;
+}
+
+#mainExploreText {
+	box-sizing: border-box;;
+	line-height: 1.5em;
+	border: none;
+}
+
+.mainGridListContainer {
+	clear: left;
+	width: 100%;
+	height: 90%;
+	box-sizing: border-box;
+	padding: 20px;
+	overflow: scroll;
+}
+
+.posterContainerText{
+	color: white;
+	font-size: 2em;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-shadow: 1px 1px 1px #333;
+}
+
+.item {
+	width: 275px;
+	height: 250px;
+	margin-right: 15px;
+	/*background: url("../images/poster.jpg");*/
+	background-color: gray;
+	display: inline-block;
+	border: 2px solid transparent;
+}
+
+.itemExplore {
+	background: url("../img/poster.jpg");
+}
+
+.ng-hide:not(.ng-hide-animate) {
+  /* this is just another form of hiding an element */
+  display: block!important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.animate-show {
+	opacity: 1;
+	/*transition: all ease 0.6s;*/
+}
+
+.animate-show.ng-hide {
+  opacity: 0;
+}
+
+.blurred, .textSpan{
+	color: #ffffff;
+}
+
+.focused {
+	color: #0099cc;
+	border: 2px solid #44C8F5;
+}
+
+.carouselListItem{
+	font-size: 20px;
+}
+
+/* main nav end */

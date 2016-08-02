@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="dfw.core">
+<head>
+		<meta charset="utf-8">
+		<title>DFW</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+		<script src="js/app-deps.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div class="mainContainer" >
+		<div class="mainVideoContainer">
+			<video loop autoplay muted poster="img/VideoPlayerBckgrnd.jpg">
+				<source src="sample.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="mainNavContainer" ng-controller="mainNavController">
+			<div class="mainNavTextContainer">
+				<span focusable ng-class="{active:isSet(1)}" class="menuItem textSpan" data-focusable-depth="0" data-focusable-group="default" data-focusable-name="focusable-0" on-focused="focus($event)" on-blurred="blur($event)" on-selected="select(setNav(1))" data-focusable-initial-focus="true" data-focusable-next-focus-left="null" id="mainMyTvText">My Tv</span>
+				<span focusable ng-class="{active:isSet(2)}" class="menuItem textSpan" data-focusable-depth="0" data-focusable-group="default" data-focusable-name="focusable-1" on-focused="focus($event)" on-blurred="blur($event)" on-selected="select(setNav(2))" id="mainLibraryText">Library</span>
+				<span focusable ng-class="{active:isSet(3)}" class="menuItem textSpan" data-focusable-depth="0" data-focusable-group="default" data-focusable-name="focusable-2" on-focused="focus($event)" on-blurred="blur($event)" on-selected="select(setNav(3))" data-focusable-next-focus-down="group:cList" data-focusable-next-focus-right="null" id="mainExploreText">Explore</span>
+			</div>
+
+			<div caph-list-container class="mainGridListContainer animate-show" ng-show="isSet(1)">
+				<div container-class="container" class="posterContainer"><span class="posterContainerText"> My List</span>
+					<caph-list  wrapper-class="wrapper">
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-3">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-4">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-5">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-6">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-7">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-8">Poster</span>
+					</caph-list>
+				</div>
+				<div container-class="container" class="posterContainer">
+					<carousel-list></carousel-list>
+				</div>
+			</div>
+
+			<div caph-list-container class="mainGridListContainer animate-show" ng-show="isSet(2)">
+				<div container-class="container" class="posterContainer"><span class="posterContainerText">My Library</span>
+					<caph-list  wrapper-class="wrapper">
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-16">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-17">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-18">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-19">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-20">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-21">Poster</span>
+					</caph-list>
+				</div>
+				<div container-class="container" class="posterContainer"><span class="posterContainerText">Saved List</span>
+					<caph-list  wrapper-class="wrapper">
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-22">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-23">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-24">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-25">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-26">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-27">Poster</span>
+					</caph-list>
+				</div>
+			</div>
+
+			<div caph-list-container class="mainGridListContainer animate-show" ng-show="isSet(3)">
+				<div container-class="container" class="posterContainer"><span class="posterContainerText">Related Shows</span>
+					<caph-list  wrapper-class="wrapper">
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-28">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-29">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-30">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-31">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-32">Poster</span>
+						<span class="item carouselListItem" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-33">Poster</span>
+					</caph-list>
+				</div>
+				<div container-class="container" class="posterContainer"><span class="posterContainerText">Liked Shows</span>
+					<caph-list  wrapper-class="wrapper">
+						<span class="item carouselListItem itemExplore" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-34">Poster</span>
+						<span class="item carouselListItem itemExplore" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-35">Poster</span>
+						<span class="item carouselListItem itemExplore" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-36">Poster</span>
+						<span class="item carouselListItem itemExplore" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-38">Poster</span>
+						<span class="item carouselListItem itemExplore" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-39">Poster</span>
+						<span class="item carouselListItem itemExplore" focusable data-focusable-depth="0" data-focusable-group="cList" data-focusable-name="focusable-40">Poster</span>
+					</caph-list>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
